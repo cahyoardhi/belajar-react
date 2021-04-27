@@ -89,8 +89,8 @@ import React from 'react'
                       <tr>                          
                       <th>no.</th>
                       <th>nama</th>
-                      <th>harga</th>
-                      <th>berat</th>
+                      <th>harga / kg</th>
+                      <th>total berat</th>
                       <th>aksi</th>
                       </tr>
                   </thead>
@@ -100,7 +100,7 @@ import React from 'react'
                               <tr key={index}>
                                   <td>{index+1}</td>
                                   <td>{data.nama}</td>
-                                  <td>{data.harga}</td>
+                                  <td>Rp {data.harga/1000} K</td>
                                   <td>{data.berat/1000}Kg</td>
                                   <td>
                                       <button onClick={this.handleEdit} value={index}>Edit</button>
@@ -115,9 +115,9 @@ import React from 'react'
               <form onSubmit={this.handleSubmit}>
                   <label>nama: </label>
                   <input type="text" name="nama" value={this.state.inputNama} onChange={this.handleInput}/>&nbsp;                
-                  <label>harga: </label>                  
+                  <label>harga / kg:</label>                  
                   <input type="number" name="harga" value={this.state.inputHarga} onChange={this.handleInput}/>&nbsp;
-                  <label>berat: </label>
+                  <label>berat (gram):</label>
                   <input type="number" name="berat" value={this.state.inputBerat} onChange={this.handleInput}/>&nbsp;
                   <input type="submit" value="submit"/>
               </form>

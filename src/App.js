@@ -5,7 +5,10 @@ import './App.css';
 // import Timer from './Timer'
 // import TimerBaru from './Tugas-11/Jam'
 // import Lists from './list'
-import Tabel from './Tugas-12/tabel'
+// import Tabel from './Tugas-12/tabel'
+// import Example from './belajarHook'
+// import List from './list hooks'
+import Tabel from './Tugas-13/tabel'
 
 function App() {
   return (
@@ -15,6 +18,8 @@ function App() {
     // <TimerBaru/>
     // <Lists/>
     <Tabel/>
+    // <Example/>
+    // <List/>
   );
 }
 
